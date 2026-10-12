@@ -64,7 +64,7 @@ new ResizeObserver(() => {
 
 // Fetch PDF data without navigating to the file or invoking a native PDF plugin.
 const loadingTask = getDocument({
-  url: new URL('./portfolio.pdf', import.meta.url).href,
+  url: new URL('./최동욱_portfolio.pdf', import.meta.url).href,
   cMapUrl: new URL('./vendor/pdfjs/cmaps/', import.meta.url).href,
   cMapPacked: true,
   standardFontDataUrl: new URL('./vendor/pdfjs/standard_fonts/', import.meta.url).href,

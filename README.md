@@ -1,6 +1,6 @@
 # Developer Portfolio
 
-`portfolio.pdf`를 PDF.js로 웹페이지 안에 표시하는 GitHub Pages용 정적 사이트입니다.
+`최동욱_portfolio.pdf`를 PDF.js로 웹페이지 안에 표시하는 GitHub Pages용 정적 사이트입니다.
 
 - 11페이지를 세로 스크롤로 탐색하며, 최초 표시와 화면 크기 변경 시 뷰어 너비에 맞춥니다. PC에서는 최대 960px 너비와 좌우 최소 48px 여백을 적용하고, 600px 이하 모바일에서도 좌우 16px 여백을 유지합니다.
 - PDF.js의 텍스트 및 주석 레이어로 텍스트 선택과 PDF 하이퍼링크를 지원합니다.
@@ -10,7 +10,7 @@
 
 ## 배포
 
-`index.html`, `viewer.css`, `viewer.mjs`, `portfolio.pdf`, `vendor/`를 함께 GitHub Pages 배포 브랜치에 반영합니다. 빌드나 서버 설정은 필요하지 않습니다. 모든 리소스는 상대 경로를 사용하므로 저장소 이름이 포함된 프로젝트 Pages 경로에서도 동작합니다.
+`index.html`, `viewer.css`, `viewer.mjs`, `최동욱_portfolio.pdf`, `vendor/`를 함께 GitHub Pages 배포 브랜치에 반영합니다. 빌드나 서버 설정은 필요하지 않습니다. 모든 리소스는 상대 경로를 사용하므로 저장소 이름이 포함된 프로젝트 Pages 경로에서도 동작합니다.
 
 Windows에서는 `start-local.cmd`를 더블클릭한 뒤 `http://localhost:8000`에 접속합니다. 실행한 창은 열어 두세요. Python이 필요합니다. 터미널에서는 저장소 루트에서 `python -m http.server 8000 --bind 127.0.0.1`을 실행해도 됩니다. ES 모듈과 PDF worker를 사용하므로 `index.html`을 더블클릭하여 `file://`로 직접 열면 PDF를 표시할 수 없습니다.
 
@@ -22,4 +22,4 @@ Mozilla의 [PDF.js](https://mozilla.github.io/pdf.js/) 공식 `pdfjs-dist` **6.4
 
 로컬 Edge에서 1440px 및 390px 화면으로 최초 표시, 11페이지 전체 렌더링, 이중 스크롤 및 가로 넘침 없음, 마지막 페이지까지 문서 스크롤, 다운로드 버튼 고정 위치를 확인했습니다. PDF 링크 8개의 주석 영역 생성과 GitHub 링크의 실제 클릭 동작도 확인했습니다. 버튼 클릭 전 다운로드 이벤트는 없었고, 클릭 후 다운로드된 파일은 원본과 바이트 단위로 일치했습니다. JavaScript 오류는 없었습니다. 모바일 실기기와 실제 GitHub Pages 배포 주소에서의 검증은 포함하지 않습니다.
 
-원본 `portfolio.pdf` SHA-256: `C1E9D0365CD3CD36DC7BF10B13CE4D65C061D480CED683561F60A9D3B1C413CB`
+원본 `최동욱_portfolio.pdf` SHA-256: `C1E9D0365CD3CD36DC7BF10B13CE4D65C061D480CED683561F60A9D3B1C413CB`

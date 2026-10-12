@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./viewer.css?v=5">
 </head>
 <body>
-  <a class="download-button" href="./portfolio.pdf" download="portfolio.pdf">
+  <a class="download-button" href="./최동욱_portfolio.pdf" download="최동욱_portfolio.pdf">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
       <path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5" />
     </svg>
@@ -26,7 +26,7 @@
       document.getElementById('status').textContent =
         '로컬에서는 start-local.cmd를 실행한 뒤 http://localhost:8000으로 접속해 주세요.';
       document.getElementById('viewerContainer').setAttribute('aria-busy', 'false');
-    } else import('./viewer.mjs?v=4').catch(error => {
+    } else import('./viewer.mjs?v=5').catch(error => {
       console.error(error);
       const status = document.getElementById('status');
       status.hidden = false;
