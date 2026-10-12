@@ -1,0 +1,76 @@
+html, body {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  background: #f5f5f5;
+  font-family: system-ui, sans-serif;
+}
+
+html { overflow-y: scroll; }
+
+#viewerContainer {
+  position: absolute;
+  inset: 64px 0 auto;
+  width: calc(100vw - 96px - var(--scrollbar-width, 0px));
+  max-width: calc(960px - var(--scrollbar-width, 0px));
+  margin-inline: auto;
+  overflow: visible;
+  padding-bottom: 32px;
+}
+
+@media (max-width: 600px) {
+  #viewerContainer {
+    width: calc(100vw - 32px - var(--scrollbar-width, 0px));
+  }
+}
+
+.download-button {
+  position: fixed;
+  top: 14px;
+  right: 16px;
+  z-index: 20;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 11px;
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+  background: #fafafa;
+  color: #444;
+  font-size: 13px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.download-button:hover { background: #eee; }
+.download-button:focus-visible { outline: 2px solid #1967d2; outline-offset: 2px; }
+
+#status {
+  position: fixed;
+  z-index: 10;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  width: max-content;
+  max-width: calc(100% - 32px);
+  margin: 0;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: #fff;
+  color: #333;
+  box-shadow: 0 2px 12px #0002;
+}
+
+#viewer .annotationLayer .linkAnnotation:hover,
+#viewer .annotationLayer .linkAnnotation > a:hover {
+  background: transparent;
+  box-shadow: none;
+}
+
+.annotationLayer a:focus-visible {
+  outline: 2px solid #1967d2;
+  outline-offset: 2px;
+}
+
+noscript { position: relative; display: block; padding: 24px; }
